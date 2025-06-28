@@ -1,0 +1,52 @@
+/* Help page container styling */
+.help-container {
+    background: rgba(20, 30, 48, 0.97);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(0,255,240,0.13);
+    padding: 48px 36px 36px 36px;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.5px solid #00fff0;
+    position: relative;
+    overflow: hidden;
+}
+
+.help-container h1 {
+    color: #00ff55;
+    margin-bottom: 24px;
+    text-align: center;
+    text-shadow: 0 0 10px #00fff088;
+}
+
+.help-container h2 {
+    color: #fda427;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.help-container p, .help-container ol {
+    color: #6c1717;
+    font-size: 1.05rem;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.help-container ol {
+    padding-left: 24px;
+}
+
+@media (max-width: 600px) {
+    .help-container {
+        padding: 24px 8px 18px 8px;
+        margin-top: 90px;
+    }
+}
+.help-bg {
+    background-image: url('cybergaurd 22.jpg');
+    background-size: cover;
+}

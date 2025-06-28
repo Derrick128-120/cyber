@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body class="contact-bg">
+    <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="help.html">Help</a>
+    </nav>
+    <div class="contact-container" style="max-width: 500px; margin: 140px auto 40px auto; background: rgba(20,30,48,0.92); border-radius: 16px; padding: 36px; box-shadow: 0 8px 32px 0 rgba(0,255,240,0.13);">
+        <h1 style="text-align:center; color:#00fff0; margin-bottom:24px;">Contact Us</h1>
+        <p style="font-size: 1.1rem; text-align:center;">
+            You can reach us at:<br>
+            <strong>Phone:</strong> <a href="tel:0740551125" style="color:#00fff0;">0740551125</a> or <a href="tel:0783114457" style="color:#00fff0;">0783114457</a>
+        </p>
+        <div style="display:flex; justify-content:center; gap:32px; margin: 28px 0;">
+            <a href="#" id="whatsapp-link" title="WhatsApp" style="color:#25D366; font-size:2.2rem;"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" id="instagram-link" title="Instagram" style="color:#E1306C; font-size:2.2rem;"><i class="fab fa-instagram"></i></a>
+            <a href="#" id="twitter-link" title="Twitter" style="color:#1DA1F2; font-size:2.2rem;"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p style="text-align:center; margin-top:18px;">
+            If you are unable to reach us on the phone numbers above, please visit our store located in Nakuru CBD.
+        </p>
+    </div>
+    <script>
+        // JavaScript for social icons (using common email)
+        const email = "bigee645@gmail.com";
+        document.getElementById('whatsapp-link').onclick = function() {
+            window.open(`https://wa.me/?text=Hello,%20contact%20me%20at%20${email}`, '_blank');
+        };
+        document.getElementById('instagram-link').onclick = function() {
+            window.open(`mailto:${email}?subject=Instagram%20Contact`, '_blank');
+        };
+        document.getElementById('twitter-link').onclick = function() {
+            window.open(`mailto:${email}?subject=Twitter%20Contact`, '_blank');
+        };
+    </script>
+</body>
+</html>
